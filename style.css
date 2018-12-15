@@ -1,0 +1,655 @@
+/*------------------------------------------------Header*/
+
+/* Containers */
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+
+
+#callout-container {
+    height: 100vh;              /* set the vh to 100 in order for the background image to full screen also set rgba to 0,0,0,0.3 in order to dim the image to make text stand out*/
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/DSC_0022.jpg) no-repeat center center fixed;
+    /*background: url('../images/DSC_0022.jpg') no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Navbar */
+
+.navbar {                                  /* I used navbar from previous whiskey drop excersie and customised it for the purpose of my website */
+    margin-bottom: 0;                      /* I used a media query to make navbar responsive so tha is will collape on smaller screen for a better more simple look*/    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .25);
+    border: 0;
+}
+
+.navbar-default .navbar-collapse {
+    color: #fff;
+    border-color: transparent;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse li:hover {
+        background-color: #EEEEEE;
+        color: #415B76;
+    }
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    color: white;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-btn {
+    border: 0;
+    border-radius: 16px;
+    width: 100px;
+    background-color: #f05f40;
+    color: white;
+}
+
+.navbar-btn:hover {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.menuitem {
+    color: #fff;
+}
+
+
+/*------------------------------------------------Footer*/
+
+footer {
+    display: inline-block;
+    padding: 5px;
+}
+
+footer p {
+    padding-left: 10px;
+    font-weight: lighter !important;
+    color: #333333 !important;
+}
+
+footer h3 {
+    font-weight: bold;
+    color: #333333 !important;
+}
+
+.contact-info li {
+    list-style: none;
+    padding: 8px;
+}
+
+.contact-info li i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.schemes li {
+    padding: 10px;
+}
+
+.list-inline {
+    padding-left: 10px;
+}
+
+/*------------------------------------------------Section*/
+
+section {
+    padding: 0;
+}
+
+.learn-more {
+    background-color: #303590;
+}
+
+/*------------------------------------------------Article*/
+
+article {
+    padding: 0;
+}
+
+/*------------------------------------------------Body*/
+
+body {
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/*index.html page*/
+
+/*------------------------------------------------Containers*/
+
+.homepage {
+    background-color: #fff;
+}
+
+.benefits-container {
+    /*background-color: #EEF4F2;*/
+    text-align: center;
+    padding: 20px;
+}
+
+.benefits-container h1,
+h2 {
+    padding: 20px;
+    color: #415B76;
+}
+
+.benefits-container p {
+    font-weight: normal;
+    color: #415B76;
+    padding-bottom: 20px;
+}
+
+.benefits-container list {
+    text-align: justify;
+}
+
+.benefits-container i {
+    font-size: 8em;
+}
+
+.easy-steps-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background-color: #EEF4F2;*/
+}
+
+
+.easy-steps-container i {
+    padding-top: 22px;
+    display: block;
+    color: #415B76;
+    font-size: 3em;
+    text-align: center;
+}
+
+.easy-steps-container h4 p {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #415B76;
+}
+
+.testimony-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #233656;
+}
+
+.testimony-container h4 {
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+}
+
+.testimony-container p {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff !important;
+    font-style: italic;
+}
+
+/*------------------------------------------------Jumbotron*/
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    text-align: center;
+    color: white !important;
+}
+
+/*------------------------------------------------ExtraStyling*/
+
+.expertise {
+    text-align: left !important;
+}
+
+.fa-thumbs-up {
+    color: #415B76;
+    font-size: 10em;
+    padding-left: 70px;
+}
+
+.easy-steps {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.easy-steps h4 {
+    font-weight: bold;
+    color: #415B76;
+}
+
+.easy-steps p {
+    color: #415B76;
+}
+
+.gurantee {
+    background-color: #fff;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.grant {
+    padding-top: 20px;
+}
+
+.guarantee-list {
+    display: inline-block;
+    list-style: none;
+}
+
+.guarantee-list li {
+    color: #415B76;
+}
+
+.guarantee-list li i {
+    display: inline-block;
+    font-size: 2em;
+    color: #1DFD05;
+}
+
+
+
+/*landlord.html page*/
+
+/*------------------------------------------------Contianers*/
+
+.landlord-container {
+    text-align: center;
+    background-color: #233656;
+    padding: 10px;
+}
+
+.landlord-container h1 {
+    font-weight: bold;
+    color: #fff;
+    font-style: italic;
+    padding-top: 35px;
+}
+
+.landlord-container span {
+    font-size: 1em;
+    color: #fff;
+    font-style: italic;
+    padding-top: 50px;
+}
+
+.landlord-container p {
+    padding: 10px;
+    color: #fff !important;
+}
+
+
+/*------------------------------------------------Text*/
+
+.bg-colour {
+    background-color: #fff;
+}
+
+.main h4 {
+    text-align: left;
+    font-weight: bold;
+    color: #415B76;
+}
+
+.main h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #415B76;
+}
+
+.main p {
+    color: #415B76;
+    font-weight: normal;
+}
+
+/*------------------------------------------------Slides*/
+
+.slid {
+    margin-top: 48px;
+}
+
+.slick-prev:before,                                     /*I used slick to create a good slider carousel and implemented jqery to make it work properl*/
+.slick-next:before {
+    color: #415B76 !important;
+}
+
+
+.mySlick-slide {
+    background-size: cover !important;
+    background-position: center !important;
+    /*display: block;*/
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/*howitworks.html page*/
+
+/*------------------------------------------------Containers*/
+
+#instructions-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/DSC_0055.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.notes-container{
+    width: 90%;
+    text-align: left;
+    margin: auto;
+}
+
+
+
+.tenants-container {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.tenants-container h2,
+p {
+    color: #415B76;
+}
+
+
+.process-container {
+    background-color: #233656;
+}
+
+.process-container h2 {
+    color: #fff;
+}
+
+.process-container li {
+    padding: 10px;
+    color: #fff;
+}
+
+
+/*------------------------------------------------Instructionboxes*/
+
+.instructions {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.instructions i {
+    color: #019CDC;
+    padding-top: 10px;
+    font-size: 5em;
+}
+
+.instructions h2 {
+    color: #fff;
+}
+
+.instructions h3 {
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    color: #019CDC;
+}
+
+.instructions span {
+    text-shadow: 1px 1px black;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/*faqs.html page*/
+
+/*------------------------------------------------Containers*/
+
+.faqs-container {
+    background-color: #fff;
+    border: 50px solid #233656;
+    padding: 20px;
+    margin: 20px;
+}
+
+.faqs-container i {
+    font-size: 2em;
+    color: #00FFCC;
+}
+
+.faqs-container h4 {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #233656;
+}
+
+.faqs-container p {
+    display: block;
+    margin: 10px;
+    font-weight: normal !important;
+}
+
+/*------------------------------------------------FurtherStyling*/
+
+.fa-question {
+    margin-right: 10px;
+}
+
+.faqslist {
+    list-style: none;
+}
+
+.directors h4,
+p {
+    color: #233656 !important;
+    display: block;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.direct {
+    text-align: center;
+}
+
+/*------------------------------------------------MediaQueries*/
+
+@media only screen and (max-width: 600px) {
+    .faqs-container {
+        background-color: #fff;
+        border: 25px solid #233656;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .faqs-container ul {
+        padding-left: 0px;
+    }
+}
+
+/*contactus.html page*/
+
+/*------------------------------------------------Containers*/
+
+#forms-container {
+    margin: 0;
+    background-color: #3E3A39;
+}
+
+.details h2 {
+    font-weight: bold;
+    color: #D5D6D7 !important;
+}
+
+.details span {
+    font-weight: lighter;
+    font-size: 16px;
+    color: #D5D6D7 !important;
+}
+
+/*------------------------------------------------Form*/
+
+.center-form {
+    margin: 0 auto;
+    max-width: 60%;
+}                                            /*I used the forms code from w3schools as a template and customised it in order to fit my websites purpose*/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+button[type="submit"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #233656;
+    color: #fafafa;
+}
+
+/*------------------------------------------------FurtherStyling*/
+
+.contact-bg-color {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/contactus.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.contact-bg-color h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact {
+    /*background-color: #233656;*/
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact h2,
+span {
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+
+.contact span {
+    padding: 18px;
+    font-size: 20px;
+}
+
+
